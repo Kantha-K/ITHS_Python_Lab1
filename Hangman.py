@@ -4,7 +4,7 @@ import string
 name = input('Enter your name: ')
 
 print(f'Welcome to Hangman game {name.capitalize()}')
-print('I will choose a word and you try guessing the letters of the word or the word.\nGood Luck.\nHave Fun')
+print('I will choose a word and you try guessing the letters of the word.\nGood Luck.\nHave Fun')
 
 def get_word():
     #list of words for the computer to choose from
@@ -53,15 +53,15 @@ def hangman_game():
                 no_of_tries-=1
             else:
                 print('wrong,try again')
-        elif len(guess) == len(comp_word):
-            if guess == comp_word:
-                print('You guessed it correctly')
-                guessed = True
-            else:
-                print('your guess is not correct \ntry again')
-                no_of_tries-=1
+        # elif len(guess) == len(comp_word):
+        #     if guess == comp_word:
+        #         print('You guessed it correctly')
+        #         guessed = True
+        #     else:
+        #         print('your guess is not correct \ntry again')
+        #         no_of_tries-=1
         else:
-            print('your word length does not match with length of my word')
+            print('Its more than one alphabet')
             no_of_tries-=1
 
         user_word=''
