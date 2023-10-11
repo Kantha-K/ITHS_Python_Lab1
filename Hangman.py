@@ -11,7 +11,7 @@ def get_word():
     words = ['python','java','javascript','csharp','Learning','Cool','FUN','happy','Hangman','ITHS','AI','MachineLearning']
     #choice method returns a random element from the words list
     return random.choice(words).lower()
-    #comp_word_length = len(comp_word)
+    
 
 #defining a function if the user wants to play again
 def play_again():
@@ -24,7 +24,6 @@ def play_again():
 #defining game play function
 def hangman_game():
     comp_word = get_word()
-    
     comp_word_length = len(comp_word)
     guessed_letters = []
     #alphabet = 'abcdefghijklmnopqrstuvwxyz'
